@@ -1,2 +1,2 @@
-require("mikael.remap")
-require("mikael.set")
+require("mika.remap")
+require("mika.set")
