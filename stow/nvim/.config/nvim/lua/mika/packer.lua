@@ -27,12 +27,12 @@ return require('packer').startup(function(use)
   use "mbbill/undotree" 
   use("tpope/vim-fugitive")
   
-  use {
+ --[[ use {
 	  "ThePrimeagen/harpoon",
 	  branch = "harpoon2",
 	  requires = { {"nvim-lua/plenary.nvim"} }
-  }
-
+  } 
+  ]]
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
