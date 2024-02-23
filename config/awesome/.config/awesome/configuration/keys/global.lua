@@ -149,20 +149,20 @@ local globalKeys =
     {description = 'Open a browser', group = 'launcher'}
   ),
   awful.key(
-    {modkey},
+    {modkey, 'Control'},
     'm',
     function()
       awful.util.spawn(apps.default.anki)
     end,
-    {description = 'Open a anki', group = 'launcher'}
+    {description = 'Open anki', group = 'launcher'}
   ),
 
   -- swap 
   --{{{ awful.keyboard.append_global_keybindings
-    awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
-              {description = "swap with next client by index", group = "client"}),
-    awful.key({ modkey, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end,
-              {description = "swap with previous client by index", group = "client"}),
+    awful.key({ modkey, 'Shift'   }, 'j', function () awful.client.swap.byidx(  1)    end,
+              {description = 'swap with next client by index', group = 'client'}),
+    awful.key({ modkey, 'Shift'   }, 'k', function () awful.client.swap.byidx( -1)    end,
+              {description = 'swap with previous client by index', group = 'client'}),
 --}}}
 
 
@@ -195,7 +195,7 @@ local globalKeys =
     {description = 'Decrease master width factor', group = 'layout'}
   ),
   awful.key(
-    {altkey, 'Shift'},
+    {altkey, 'Shift', 'Control'},
     'Down',
     function()
       awful.client.incwfact(0.05)
@@ -203,7 +203,7 @@ local globalKeys =
     {description = 'Decrease master height factor', group = 'layout'}
   ),
   awful.key(
-    {altkey, 'Shift'},
+    {altkey, 'Shift', 'Control'},
     'Up',
     function()
       awful.client.incwfact(-0.05)
@@ -427,7 +427,7 @@ local globalKeys =
     {modkey},
     'e',
     function()
-      awful.util.spawn(apps.default.files)
+      awful.util.spawn(apps.default.file)
     end,
     {description = 'filebrowser', group = 'hotkeys'}
   ),

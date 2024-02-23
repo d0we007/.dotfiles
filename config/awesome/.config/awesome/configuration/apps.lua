@@ -19,9 +19,9 @@ return {
     editor = 'gedit', -- gui text editor
     social = 'discord',
     game = rofi_command,
-    files = 'nautilus',
+    file = 'nemo',
     music = rofi_command,
-    anki = 'Anki',
+    anki = 'anki',
   },
   -- List of apps to start once on start-up
   run_on_start_up = {
