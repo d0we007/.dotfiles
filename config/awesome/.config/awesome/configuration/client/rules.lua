@@ -30,10 +30,6 @@ awful.rules.rules = {
     properties = { kill = true }
   },
   {
-    rule = { class = 'Anki'},
-    properties = { floating = true }
-  },
-  {
     rule_any = {name = {'QuakeTerminal'}},
     properties = {skip_decoration = true}
   },
