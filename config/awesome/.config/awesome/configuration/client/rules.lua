@@ -45,6 +45,15 @@ awful.rules.rules = {
     }
   },
   {
+    rule_any = {
+      class = {'Brave-browser'},
+      name = {'brave-browser'},
+    },
+    properties = {
+      tag ='<6>calendar'
+    }
+  },
+  {
     rule = { class = 'Variety'},
     properties = { kill = true }
   },
