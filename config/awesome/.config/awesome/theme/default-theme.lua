@@ -12,7 +12,7 @@ local gfs = require('gears.filesystem')
 local themes_path = gfs.get_themes_dir()
 local theme = {}
 theme.icons = theme_dir .. '/icons/'
-theme.font = 'Roboto medium 12'
+theme.font = 'Roboto medium 16'
 
 -- Colors Pallets
 
