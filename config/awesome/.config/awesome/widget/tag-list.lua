@@ -1,3 +1,5 @@
+
+ 
 local awful = require('awful')
 local wibox = require('wibox')
 local dpi = require('beautiful').xresources.apply_dpi
@@ -8,7 +10,9 @@ local modkey = require('configuration.keys.mod').modKey
 -- @tab buttons
 -- @param object
 -- @treturn table
-local function create_buttons(buttons, object)
+
+
+--[[local function create_buttons(buttons, object)
   if buttons then
     local btns = {}
     for _, b in ipairs(buttons) do
@@ -35,7 +39,8 @@ local function create_buttons(buttons, object)
     return btns
   end
 end
-
+]]
+--[[
 local function list_update(w, buttons, label, data, objects)
   -- update the widgets, creating them if needed
   w:reset()
@@ -49,7 +54,7 @@ local function list_update(w, buttons, label, data, objects)
       tbm = cache.tbm
       ibm = cache.ibm
     else
-      ib = wibox.widget.imagebox()
+      -- ib = wibox.widget.imagebox()
       tb = wibox.widget.textbox()
       bgb = wibox.container.background()
       tbm = wibox.container.margin(tb, dpi(6), dpi(6))
@@ -77,7 +82,7 @@ local function list_update(w, buttons, label, data, objects)
       }
     end
 
-    local text, bg, bg_image, icon, args = label(o, tb)
+    local text, bg, bg_image, args = label(o, tb)
     args = args or {}
 
     -- The text might be invalid, so use pcall.
@@ -107,6 +112,7 @@ local function list_update(w, buttons, label, data, objects)
     w:add(bgb)
   end
 end
+]]
 
 local TagList = function(s)
   return awful.widget.taglist(

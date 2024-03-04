@@ -5,10 +5,10 @@ local TaskList = require('widget.task-list')
 local TagList = require('widget.tag-list')
 local gears = require('gears')
 local clickable_container = require('widget.material.clickable-container')
-local mat_icon_button = require('widget.material.icon-button')
-local mat_icon = require('widget.material.icon')
+--local mat_icon_button = require('widget.material.icon-button')
+--local mat_icon = require('widget.material.icon')
 local dpi = require('beautiful').xresources.apply_dpi
-local icons = require('theme.icons')
+-- local icons = require('theme.icons')
 
 -- Titus - Horizontal Tray
 local systray = wibox.widget.systray()
@@ -32,6 +32,7 @@ month_calendar:attach(textclock)
 
 local clock_widget = wibox.container.margin(textclock, dpi(13), dpi(13), dpi(9), dpi(8))
 
+--[[
 local add_button = mat_icon_button(mat_icon(icons.plus, dpi(24)))
 add_button:buttons(
   gears.table.join(
@@ -52,6 +53,7 @@ add_button:buttons(
   )
 )
 
+]]
 -- Create an imagebox widget which will contains an icon indicating which layout we're using.
 -- We need one layoutbox per screen.
 local LayoutBox = function(s)

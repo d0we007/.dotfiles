@@ -2,9 +2,16 @@ local filesystem = require('gears.filesystem')
 local mat_colors = require('theme.mat-colors')
 local theme_dir = filesystem.get_configuration_dir() .. '/theme'
 local gears = require('gears')
-local dpi = require('beautiful').xresources.apply_dpi
+-- local dpi = require('beautiful').xresources.apply_dpi
+
+local theme_assets = require('beautiful.theme_assets')
+local xresources = require('beautiful.xresources')
+local dpi = xresources.apply_dpi
+
+local gfs = require('gears.filesystem')
+local themes_path = gfs.get_themes_dir()
 local theme = {}
-theme.icons = theme_dir .. '/icons/'
+-- theme.icons = theme_dir .. '/icons/'
 theme.font = 'Roboto medium 10'
 
 -- Colors Pallets
@@ -21,7 +28,7 @@ theme.background = mat_colors.grey
 local awesome_overrides =
   function(theme)
   theme.dir = os.getenv('HOME') .. '/.config/awesome/theme'
-  theme.icons = theme.dir .. '/icons/'
+  -- theme.icons = theme.dir .. '/icons/'
   --theme.wallpaper = theme.dir .. '/wallpapers/DarkCyan.png'
   theme.wallpaper = '#e0e0e0'
   theme.font = 'Roboto medium 10'
@@ -60,8 +67,8 @@ local awesome_overrides =
 
   -- Layout
 
-  theme.layout_max = theme.icons .. 'layouts/arrow-expand-all.png'
-  theme.layout_tile = theme.icons .. 'layouts/view-quilt.png'
+  -- theme.layout_max = theme.icons .. 'layouts/arrow-expand-all.png'
+  -- theme.layout_tile = theme.icons .. 'layouts/view-quilt.png'
 
   -- Taglist
 
@@ -81,6 +88,16 @@ local awesome_overrides =
           ':0.08,' .. theme.primary.hue_500 .. ':0.08,' .. theme.background.hue_800 .. ':1,' .. theme.background.hue_800
 ]]--
 
+ -- Generate taglist squares:
+ theme.taglist_bg_focus = "#ff0000"
+ local taglist_square_size = dpi(4)
+ theme.taglist_squares_sel = theme_assets.taglist_squares_sel(
+     taglist_square_size, theme.fg_normal
+ )
+ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
+     taglist_square_size, theme.fg_normal
+ )
+
   -- Tasklist
 
   theme.tasklist_font = 'Roboto medium 11'
@@ -96,7 +113,7 @@ local awesome_overrides =
   theme.tasklist_fg_urgent = theme.fg_normal
   theme.tasklist_fg_normal = '#AAAAAA'
 
-  theme.icon_theme = 'Papirus-Dark'
+  -- theme.icon_theme = 'Papirus-Dark'
 
   --Client
   theme.border_width = dpi(2)

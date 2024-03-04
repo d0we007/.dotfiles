@@ -1,4 +1,5 @@
 ---------------------------------------------------------------------------
+
 --- Maximized and fullscreen layouts module for awful
 --
 -- @author Julien Danjou &lt;julien@danjou.info&gt;

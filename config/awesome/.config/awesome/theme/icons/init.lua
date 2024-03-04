@@ -1,3 +1,4 @@
+
 local dir = os.getenv('HOME') .. '/.config/awesome/theme/icons'
 
 return {

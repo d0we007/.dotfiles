@@ -1,63 +1,38 @@
 local awful = require('awful')
 local gears = require('gears')
-local icons = require('theme.icons')
+-- local icons = require('theme.icons')
 local apps = require('configuration.apps')
 
 local tags = {
   {
-    icon = icons.plus,
+    name = "1. <akira>",
+    -- icon = icons.plus,
     type = 'chrome',
     defaultApp = apps.default.editor,
     screen = 1
   },
   {
-    icon = icons.plus,
+    name = "2. <orange>",
+    -- icon = icons.plus,
     type = 'code',
     defaultApp = apps.default.editor,
     screen = 1
   },
   {
-    icon = icons.plus,
+    name = "3. <oreo>",
+    -- icon = icons.plus,
     type = 'social',
     defaultApp = apps.default.social,
     screen = 1
   },
   {
-    icon = icons.plus,
+    name = "4. <apple>",
+    -- icon = icons.plus,
     type = 'game',
     defaultApp = apps.default.game,
     screen = 1
   },
-  {
-    icon = icons.plus,
-    type = 'files',
-    defaultApp = apps.default.plus,
-    screen = 1
-  },
-  {
-    icon = icons.plus,
-    type = 'music',
-    defaultApp = apps.default.music,
-    screen = 1
-  },
-  {
-    icon = icons.plus,
-    type = 'any',
-    defaultApp = apps.default.rofi,
-    screen = 1
-  },
-  {
-    icon = icons.plus,
-    type = 'any',
-    defaultApp = apps.default.rofi,
-    screen = 1
-  },
-  {
-    icon = icons.plus,
-    type = 'any',
-    defaultApp = apps.default.rofi,
-    screen = 1
-  }
+
 }
 
 awful.layout.layouts = {
@@ -72,8 +47,8 @@ awful.screen.connect_for_each_screen(
       awful.tag.add(
         i,
         {
-          icon = tag.icon,
-          icon_only = false,
+          name = tag.name,
+          -- icon = tag.icon,
           layout = awful.layout.suit.tile,
           gap_single_client = false,
           gap = 2,
