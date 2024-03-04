@@ -31,7 +31,7 @@ local awesome_overrides =
   -- theme.icons = theme.dir .. '/icons/'
   --theme.wallpaper = theme.dir .. '/wallpapers/DarkCyan.png'
   theme.wallpaper = '#e0e0e0'
-  theme.font = 'Roboto medium 14'
+  theme.font = 'Comic Code Pro 14'
   theme.title_font = 'Roboto medium 18'
 
   theme.fg_normal = '#ffffffde'
