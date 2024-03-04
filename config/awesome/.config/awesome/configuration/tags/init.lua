@@ -5,31 +5,66 @@ local apps = require('configuration.apps')
 
 local tags = {
   {
-    name = "1. <akira>",
+    name = "1. <code>",
     -- icon = icons.plus,
     type = 'chrome',
     defaultApp = apps.default.editor,
     screen = 1
   },
   {
-    name = "2. <orange>",
+    name = "2. <browser>",
     -- icon = icons.plus,
     type = 'code',
     defaultApp = apps.default.editor,
     screen = 1
   },
   {
-    name = "3. <oreo>",
+    name = "3. <code>",
     -- icon = icons.plus,
     type = 'social',
     defaultApp = apps.default.social,
     screen = 1
   },
   {
-    name = "4. <apple>",
+    name = "4. <sketch>",
     -- icon = icons.plus,
     type = 'game',
     defaultApp = apps.default.game,
+    screen = 1
+  },
+  {
+    name = "5. <fun>",
+    -- icon = icons.plus,
+    type = 'chrome',
+    defaultApp = apps.default.editor,
+    screen = 1
+  },
+  {
+    name = "6. <calendar>",
+    -- icon = icons.plus,
+    type = 'chrome',
+    defaultApp = apps.default.editor,
+    screen = 1
+  },
+  {
+    name = "7. <plan>",
+    -- icon = icons.plus,
+    type = 'chrome',
+    defaultApp = apps.default.editor,
+    screen = 1
+  },
+  {
+    name = "8. <prompts>",
+    -- icon = icons.plus,
+    type = 'chrome',
+    defaultApp = apps.default.editor,
+    screen = 1
+  },
+  {
+    name = "9. <anki>",
+    -- icon = icons.plus,
+    type = 'chrome',
+    defaultApp = apps.default.editor,
     screen = 1
   },
 

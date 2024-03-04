@@ -11,8 +11,8 @@ local dpi = xresources.apply_dpi
 local gfs = require('gears.filesystem')
 local themes_path = gfs.get_themes_dir()
 local theme = {}
--- theme.icons = theme_dir .. '/icons/'
-theme.font = 'Roboto medium 14'
+theme.icons = theme_dir .. '/icons/'
+theme.font = 'Roboto medium 12'
 
 -- Colors Pallets
 
@@ -67,8 +67,8 @@ local awesome_overrides =
 
   -- Layout
 
-  -- theme.layout_max = theme.icons .. 'layouts/arrow-expand-all.png'
-  -- theme.layout_tile = theme.icons .. 'layouts/view-quilt.png'
+  theme.layout_max = theme.icons .. 'layouts/arrow-expand-all.png'
+  theme.layout_tile = theme.icons .. 'layouts/view-quilt.png'
 
   -- Taglist
 
@@ -113,7 +113,7 @@ local awesome_overrides =
   theme.tasklist_fg_urgent = theme.fg_normal
   theme.tasklist_fg_normal = '#AAAAAA'
 
-  -- theme.icon_theme = 'Papirus-Dark'
+ theme.icon_theme = 'Papirus-Dark'
 
   --Client
   theme.border_width = dpi(2)
