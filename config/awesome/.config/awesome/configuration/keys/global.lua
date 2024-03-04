@@ -1,4 +1,5 @@
 local awful = require('awful')
+local gears = require('gears')
 require('awful.autofocus')
 local beautiful = require('beautiful')
 local hotkeys_popup = require('awful.hotkeys_popup').widget
@@ -271,6 +272,19 @@ local globalKeys =
     end,
     {description = 'restore minimized', group = 'client'}
   ),
+  awful.key(
+  {modkey, altkey},
+  'n',
+  function()
+    local c = _G.client.focus
+    -- Minimize focused client
+    if c then
+      c.minimized = true
+    end
+  end,
+  {description = 'minimize focused client', group = 'client'}
+),
+
   -- Dropdown application
   awful.key(
     {modkey},

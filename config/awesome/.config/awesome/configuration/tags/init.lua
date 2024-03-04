@@ -1,6 +1,6 @@
 local awful = require('awful')
 local gears = require('gears')
--- local icons = require('theme.icons')
+local icons = require('theme.icons')
 local apps = require('configuration.apps')
 
 local tags = {
@@ -48,7 +48,7 @@ awful.screen.connect_for_each_screen(
         i,
         {
           name = tag.name,
-          -- icon = tag.icon,
+          icon = tag.icon,
           layout = awful.layout.suit.tile,
           gap_single_client = false,
           gap = 2,

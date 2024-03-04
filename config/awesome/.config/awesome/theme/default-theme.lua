@@ -12,7 +12,7 @@ local gfs = require('gears.filesystem')
 local themes_path = gfs.get_themes_dir()
 local theme = {}
 -- theme.icons = theme_dir .. '/icons/'
-theme.font = 'Roboto medium 10'
+theme.font = 'Roboto medium 14'
 
 -- Colors Pallets
 
@@ -31,8 +31,8 @@ local awesome_overrides =
   -- theme.icons = theme.dir .. '/icons/'
   --theme.wallpaper = theme.dir .. '/wallpapers/DarkCyan.png'
   theme.wallpaper = '#e0e0e0'
-  theme.font = 'Roboto medium 10'
-  theme.title_font = 'Roboto medium 14'
+  theme.font = 'Roboto medium 14'
+  theme.title_font = 'Roboto medium 18'
 
   theme.fg_normal = '#ffffffde'
 
@@ -90,7 +90,7 @@ local awesome_overrides =
 
  -- Generate taglist squares:
  theme.taglist_bg_focus = "#ff0000"
- local taglist_square_size = dpi(4)
+ local taglist_square_size = dpi(8)
  theme.taglist_squares_sel = theme_assets.taglist_squares_sel(
      taglist_square_size, theme.fg_normal
  )
