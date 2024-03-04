@@ -25,10 +25,30 @@ awful.rules.rules = {
       maximized_vertical = false
     }
   },
+  -- Select tag by name:
+  {
+    rule_any = {
+      class = {'anki'},
+      name = {'Anki'},
+    },
+    properties = {
+      tag ='<9>anki'
+    }
+  },
+  {
+    rule_any = {
+      class = {'obsidian'},
+      name = {'obsidian'},
+    },
+    properties = {
+      tag ='<7>plan'
+    }
+  },
   {
     rule = { class = 'Variety'},
     properties = { kill = true }
   },
+  
   {
     rule_any = {name = {'QuakeTerminal'}},
     properties = {skip_decoration = true}
