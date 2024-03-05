@@ -13,7 +13,7 @@ return {
     lock = 'i3lock-fancy',
     quake = 'terminator',
     screenshot = 'flameshot screen -p /home/mika/Documents/00-inbox/90-99-archive/90-img/archive',
-    region_screenshot = 'flameshot gui -p /home/mika/Documents/00-inbox/90-99-archive/90-img/archive',
+    region_screenshot = 'flameshot gui',
     delayed_screenshot = 'flameshot screen -p /home/mika/Documents/00-inbox/90-99-archive/90-img/archive -d 5000',
     browser = 'firefox',
     editor = 'gedit', -- gui text editor
