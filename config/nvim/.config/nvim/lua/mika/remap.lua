@@ -46,4 +46,8 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
+
+-- General
+vim.keymap.set("n", "<leader>q", ":!zathura <C-r>expand('%:r')<cr>.pdf &<cr>");
+
 end)

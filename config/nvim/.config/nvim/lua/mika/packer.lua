@@ -26,13 +26,22 @@ return require('packer').startup(function(use)
   use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
   use "mbbill/undotree" 
   use("tpope/vim-fugitive")
-  
+  use 'lervag/vimtex'
  --[[ use {
 	  "ThePrimeagen/harpoon",
 	  branch = "harpoon2",
 	  requires = { {"nvim-lua/plenary.nvim"} }
   } 
   ]]
+
+use {
+      "lervag/vimtex",
+      init = function()
+          -- Use init for configuration, don't use the more common "config".
+      end
+  }
+
+
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
