@@ -32,7 +32,7 @@ awful.rules.rules = {
       name = {'Anki'},
     },
     properties = {
-      tag ='<9>anki'
+      tag ='9'
     }
   },
   {
@@ -41,7 +41,7 @@ awful.rules.rules = {
       name = {'obsidian'},
     },
     properties = {
-      tag ='<7>plan'
+      tag ='7'
     }
   },
   {
@@ -50,7 +50,7 @@ awful.rules.rules = {
       name = {'brave-browser'},
     },
     properties = {
-      tag ='<6>calendar'
+      tag ='6'
     }
   },
   {

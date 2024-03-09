@@ -89,8 +89,8 @@ local awesome_overrides =
 ]]--
 
  -- Generate taglist squares:
- theme.taglist_bg_focus = "#ff0000"
- local taglist_square_size = dpi(8)
+ theme.taglist_bg_focus = "#0000ff"
+ local taglist_square_size = dpi(6)
  theme.taglist_squares_sel = theme_assets.taglist_squares_sel(
      taglist_square_size, theme.fg_normal
  )
