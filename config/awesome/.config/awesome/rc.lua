@@ -62,6 +62,7 @@ _G.client.connect_signal(
     c.border_color = beautiful.border_focus
   end
 )
+
 _G.client.connect_signal(
   'unfocus',
   function(c)

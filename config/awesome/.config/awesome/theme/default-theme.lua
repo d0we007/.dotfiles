@@ -46,12 +46,20 @@ local awesome_overrides =
   theme.bg_systray = theme.background.hue_800
 
   -- Borders
-
+--[[
   theme.border_width = dpi(2)
   theme.border_normal = theme.background.hue_800
   theme.border_focus = theme.primary.hue_300
-  theme.border_marked = '#CC9393'
+  theme.border_marked = '#39FF14'
+  ]]
 
+  theme.border_width = dpi(3)
+  theme.border_focus = theme.primary.hue_900
+  theme.border_normal = theme.background.hue_900
+  theme.border_marked = '#FF0000'
+  theme.border_focus = '#0000FF'
+  
+  
   -- Menu
 
   theme.menu_height = dpi(16)
@@ -115,10 +123,7 @@ local awesome_overrides =
 
  theme.icon_theme = 'Papirus-Dark'
 
-  --Client
-  theme.border_width = dpi(2)
-  theme.border_focus = theme.primary.hue_500
-  theme.border_normal = theme.background.hue_800
+
 end
 return {
   theme = theme,

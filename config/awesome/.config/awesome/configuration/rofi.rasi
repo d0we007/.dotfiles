@@ -24,7 +24,7 @@ configuration {
 	selbg:                       #215d9c;
 	actbg:                       #262626;
 	urgbg:                       #e53935;
-	winbg:			     		 #26c6da;
+	winbg:			     		 				 #26c6da;
 	bg:                          #11121D00;
 
 
