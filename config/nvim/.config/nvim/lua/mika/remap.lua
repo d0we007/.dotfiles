@@ -45,8 +45,7 @@ vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/the
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
 -- General
-vim.keymap.set("n", "<leader>q", ":!zathura <C-r>expand('%:r')<cr>.pdf &<cr>");
-
+vim.keymap.set("n", "<leader>q", ":!zathura <C-r>=expand('%:r')<cr>.pdf &<cr>")
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
