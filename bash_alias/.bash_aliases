@@ -3,4 +3,4 @@ alias la='ls -A'
 alias l='ls -CF'
 alias sn='stow -nvSt ~ ' 
 alias sc='stow -vSt ~ ' 
-
+alias cpm='cp ~/.dotfiles/config/latex_template/.config/latex_template/*.tex ./'
