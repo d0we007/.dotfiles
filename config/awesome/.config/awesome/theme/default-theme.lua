@@ -53,7 +53,7 @@ local awesome_overrides =
   theme.border_marked = '#39FF14'
   ]]
 
-  theme.border_width = dpi(2)
+  theme.border_width = dpi(4)
   theme.border_focus = theme.primary.hue_900
   theme.border_normal = theme.background.hue_900
   theme.border_marked = '#FF0000'
