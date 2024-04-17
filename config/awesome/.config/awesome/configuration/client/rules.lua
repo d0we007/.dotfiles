@@ -44,6 +44,8 @@ awful.rules.rules = {
       tag ='7'
     }
   },
+  
+  --[[
   {
     rule_any = {
       class = {'firefox'},
@@ -53,6 +55,7 @@ awful.rules.rules = {
       tag ='6'
     }
   },
+  ]]
   {
     rule = { class = 'Variety'},
     properties = { kill = true }
