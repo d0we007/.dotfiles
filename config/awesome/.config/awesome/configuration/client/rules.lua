@@ -46,8 +46,8 @@ awful.rules.rules = {
   },
   {
     rule_any = {
-      class = {'Brave-browser'},
-      name = {'brave-browser'},
+      class = {'firefox'},
+      name = {'firefox'},
     },
     properties = {
       tag ='6'
