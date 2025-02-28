@@ -14,14 +14,14 @@ local globalKeys =
   awful.key({modkey}, 'F1', hotkeys_popup.show_help, {description = 'Show help', group = 'awesome'}),
   -- Tag browsing
   awful.key({modkey}, 'w', awful.tag.viewprev, {description = 'view previous', group = 'tag'}),
-  awful.key({modkey}, 's', awful.tag.viewnext, {description = 'view next', group = 'tag'}),
+  awful.key({modkey}, 'r', awful.tag.viewnext, {description = 'view next', group = 'tag'}),
   awful.key({altkey, 'Control'}, 'PgUp', awful.tag.viewprev, {description = 'view previous', group = 'tag'}),
   awful.key({altkey, 'Control'}, 'PgDown', awful.tag.viewnext, {description = 'view next', group = 'tag'}),
   awful.key({modkey}, 'Escape', awful.tag.history.restore, {description = 'go back', group = 'tag'}),
   -- Default client focus
   awful.key(
     {modkey},
-    'd',
+    's',
     function()
       awful.client.focus.byidx(1)
     end,
@@ -37,7 +37,7 @@ local globalKeys =
   ),
   awful.key(
     {modkey},
-    'r',
+    't',
     function()
       awful.spawn('rofi -combi-modi window,drun -show combi -modi combi')
     end,
@@ -127,7 +127,7 @@ local globalKeys =
   ),
   awful.key(
     {'Control', 'Shift'},
-    'z',
+    'x',
     function()
       awful.util.spawn_with_shell(apps.default.region_screenshot)
     end,
@@ -160,9 +160,9 @@ local globalKeys =
 
   -- swap 
   --{{{ awful.keyboard.append_global_keybindings
-    awful.key({ modkey, 'Shift'   }, 'j', function () awful.client.swap.byidx(  1)    end,
+    awful.key({ modkey, 'Shift'   }, 'n', function () awful.client.swap.byidx(  1)    end,
               {description = 'swap with next client by index', group = 'client'}),
-    awful.key({ modkey, 'Shift'   }, 'k', function () awful.client.swap.byidx( -1)    end,
+    awful.key({ modkey, 'Shift'   }, 'e', function () awful.client.swap.byidx( -1)    end,
               {description = 'swap with previous client by index', group = 'client'}),
 --}}}
 
@@ -178,7 +178,7 @@ local globalKeys =
     {description = 'Open a terminal', group = 'launcher'}
   ),
   awful.key({modkey, 'Control'}, 'r', _G.awesome.restart, {description = 'reload awesome', group = 'awesome'}),
-  awful.key({modkey, 'Control'}, 'q', _G.awesome.quit, {description = 'quit awesome', group = 'awesome'}),
+  awful.key({modkey, 'Control'}, 'y', _G.awesome.quit, {description = 'quit awesome', group = 'awesome'}),
   awful.key(
     {altkey, 'Shift'},
     'Right',
@@ -439,7 +439,7 @@ local globalKeys =
   -- File Manager
   awful.key(
     {modkey},
-    'e',
+    'i',
     function()
       awful.util.spawn(apps.default.file)
     end,

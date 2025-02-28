@@ -26,6 +26,7 @@ awful.rules.rules = {
     }
   },
   -- Select tag by name:
+  --[[
   {
     rule_any = {
       class = {'anki'},
@@ -35,16 +36,31 @@ awful.rules.rules = {
       tag ='9'
     }
   },
+  ]]
+  --[[ 
   {
     rule_any = {
       class = {'obsidian'},
       name = {'obsidian'},
     },
     properties = {
-      tag ='7'
+      tag ='2'
     }
   },
-  
+  --]]
+
+
+  {
+    rule_any = {
+      class = {'Google-chrome'},
+      name = {'Google-chrome'},
+    },
+    properties = {
+      tag ='2'
+    }
+  },
+
+
   --[[
   {
     rule_any = {
@@ -56,11 +72,14 @@ awful.rules.rules = {
     }
   },
   ]]
+  
+  --[[
   {
     rule = { class = 'Variety'},
-    properties = { kill = true }
+    properties = { kill = true}
   },
-  
+  --]]
+
   {
     rule_any = {name = {'QuakeTerminal'}},
     properties = {skip_decoration = true}

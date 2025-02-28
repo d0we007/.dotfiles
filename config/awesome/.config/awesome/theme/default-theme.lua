@@ -97,7 +97,8 @@ local awesome_overrides =
 ]]--
 
  -- Generate taglist squares:
- theme.taglist_bg_focus = "#0000ff"
+ theme.taglist_fg_focus = "#000000"
+ theme.taglist_bg_focus = "#00FFFF"
  local taglist_square_size = dpi(6)
  theme.taglist_squares_sel = theme_assets.taglist_squares_sel(
      taglist_square_size, theme.fg_normal
@@ -108,7 +109,7 @@ local awesome_overrides =
 
   -- Tasklist
 
-  theme.tasklist_font = 'Roboto medium 11'
+  theme.tasklist_font = 'Lexend 12'
   theme.tasklist_bg_normal = theme.background.hue_800
   theme.tasklist_bg_focus =
     'linear:0,0:0,' ..
@@ -117,9 +118,19 @@ local awesome_overrides =
         theme.background.hue_800 ..
           ':0.95,' .. theme.background.hue_800 .. ':0.95,' .. theme.fg_normal .. ':1,' .. theme.fg_normal
   theme.tasklist_bg_urgent = theme.primary.hue_800
-  theme.tasklist_fg_focus = '#DDDDDD'
+  
+  theme.tasklist_fg_focus = '#000000'
+  theme.tasklist_bg_focus = '#FFC3D6'
+  --theme.tasklist_bg_focus = '#FFB7C5'
   theme.tasklist_fg_urgent = theme.fg_normal
-  theme.tasklist_fg_normal = '#AAAAAA'
+  
+  theme.tasklist_fg_normal = '#FFC3D6'
+  theme.tasklist_bg_normal = '#000000'
+  theme.tasklist_fg_minimize  = '#FFFFFF'
+  theme.tasklist_bg_minimize  = '#c20d1a'
+  
+  --theme.taglist_bg_empty = '#FF5733'
+  theme.taglist_bg_empty = '#c20d1a'
 
  theme.icon_theme = 'Papirus-Dark'
 

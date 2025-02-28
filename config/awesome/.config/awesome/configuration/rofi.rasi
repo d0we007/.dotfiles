@@ -19,7 +19,7 @@ configuration {
 }
 
 * {
-	background-color:            #080808D00;
+	background-color:            #080808;
 	text-color:                  #d3d7cf;
 	selbg:                       #215d9c;
 	actbg:                       #262626;

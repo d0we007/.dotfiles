@@ -12,9 +12,9 @@ return {
     rofi = rofi_command,
     lock = 'i3lock-fancy',
     quake = 'terminator',
-    screenshot = 'flameshot screen -p /home/mika/Documents/00-inbox/90-99-archive/90-img/archive',
-    region_screenshot = 'flameshot gui',
-    delayed_screenshot = 'flameshot screen -p /home/mika/Documents/00-inbox/90-99-archive/90-img/archive -d 5000',
+    screenshot = 'flameshot screen -p /home/mika/Documents/00-inbox/9000-archive/9100-img/',
+    region_screenshot = 'flameshot gui' ,
+    delayed_screenshot = 'flameshot screen -p /home/mika/Documents/00-inbox/9000-archive/9100-img/ -d 5000',
     browser = 'firefox',
     editor = 'gedit', -- gui text editor
     social = 'discord',
@@ -38,7 +38,8 @@ return {
     'feh --randomize --bg-fill ~/.wallpapers/*',
     '/usr/bin/variety',
     'anki',
-    'obsidian',
+    'Google-chrome',
+    -- 'obsidian',
     -- 'brave-browser',
     -- Add applications that need to be killed between reloads
     -- to avoid multipled instances, inside the awspawn script
