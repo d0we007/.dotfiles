@@ -88,3 +88,4 @@ eval "$(starship init bash)"
 xmodmap -e "keycode 66 = Shift_L"
 xset s off
 
+# testing

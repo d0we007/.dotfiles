@@ -1,6 +1,7 @@
 alias ll='ls -l'
 alias la='ls -a'
 alias l='ls -CF'
+alias lt='ls -lt'
 alias sn='stow -nvSt ~ ' 
 alias sc='stow -vSt ~ ' 
 alias cpm='cp ~/.dotfiles/config/latex_template/.config/latex_template/*.tex ./'
